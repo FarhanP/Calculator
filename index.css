@@ -3,17 +3,20 @@
   margin: 0;
   height: 0;
   font-family: "Poppins", sans-serif;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .container {
   margin: 0 auto;
   background-color: rgb(241, 172, 186);
   box-shadow: 0 26px 41px 0 #d4dae0;
-  width: 20vw;
-  height: 50vh;
+  width: 50vw;
+  height: 53vh;
   padding: 0.8rem;
   border-radius: 15px;
-  margin-top: 5rem;
+  margin-top: 4rem;
+  min-width: 260px;
+  min-height: 330px;
 }
 
 .title {
@@ -25,7 +28,7 @@
 
 #screen {
   background-color: #d1e0e0;
-  padding: 2rem;
+  padding: 1.5rem;
   border-radius: 10px;
   margin: 0 auto;
   height: 9vh;
@@ -57,7 +60,7 @@ td {
 
 .credit {
   text-align: center;
-  margin-top: 8rem;
+  margin-top: 6rem;
   font-size: large;
 }
 
@@ -68,4 +71,21 @@ td {
 td:active {
   background-color: rgb(255, 231, 236);
   border-radius: 60px;
+}
+
+@media (min-width: 40rem) {
+  .container {
+    width: 44vw;
+    height: 51vh;
+    max-width: 1000px;
+    padding: 0.8rem;
+    margin-top: 5rem;
+    max-width: 310px;
+  }
+
+  #screen {
+    padding: 2rem;
+    height: 8vh;
+    text-align: right;
+  }
 }
