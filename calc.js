@@ -6,6 +6,8 @@ var ans;
 function sendNum(digit){
 
   num.push(digit);
+  console.log('Num array', num);
+
 
   if(num.length!=1){
     a='';
@@ -16,11 +18,19 @@ function sendNum(digit){
     a+=num[i];
   }
 
+  console.log('A', a);
+
+
   document.getElementById('screen').innerHTML=a;
 }
 
 function equalTo(){
   document.getElementById('screen').innerHTML='';
+
+  if(num.length!=1){
+    b='';
+    document.getElementById('screen').innerHTML=b;
+  }
 
   for(i=0; i<num.length;i++){
     b+=num[i];
