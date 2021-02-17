@@ -2,10 +2,13 @@ var a='';
 var b='';
 var num=[];
 var ans;
+var regexPattern;
 
 function sendNum(digit){
 
   num.push(digit);
+
+  
   console.log('Num array', num);
 
 
@@ -34,6 +37,16 @@ function equalTo(){
 
   for(i=0; i<num.length;i++){
     b+=num[i];
+  }
+
+ regexPattern=/([0-9]*\.?[0-9]+[\/\+\-])+([0-9]+)/;
+
+
+  if(regexPattern.test(b)){
+    console.log(regexPattern.test(b))
+    b=b.replace('*0.01', '');
+    console.log('b',b);
+    
   }
 
   ans= eval(b);
