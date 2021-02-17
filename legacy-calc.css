@@ -1,7 +1,7 @@
-html,
-body {
-  margin: 0;
+* {
   box-sizing: border-box;
+  margin: 0;
+  height: 0;
   font-family: "Poppins", sans-serif;
   -webkit-tap-highlight-color: transparent;
 }
@@ -31,7 +31,7 @@ body {
   padding: 1.5rem;
   border-radius: 10px;
   margin: 0 auto;
-  height: 2vh;
+  height: 9vh;
   text-align: right;
   font-size: x-large;
   font-weight: bolder;
@@ -39,32 +39,19 @@ body {
   overflow: hidden;
 }
 
-.main-keys {
-  display: flex;
-  margin: 0 auto;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.main-table {
   background-color: #ffffff;
-  margin-top: 10px;
-  height: 42vh;
+  margin: 0 auto;
+  margin-top: 12px;
   border-radius: 15px;
+  cursor: pointer;
 }
 
-button {
-  font-family: "Poppins", sans-serif;
-  width: 70px;
-  align-items: center;
-  vertical-align: middle;
-  height: 6vh;
-  margin: 0 auto;
-  padding: 0 1.5rem;
-  background-color: white;
-  border-color: white;
-  font-size: x-large;
-  outline: none;
-  border: none;
+td {
+  width: 110px;
   text-align: center;
+  height: 6vh;
+  font-size: x-large;
 }
 
 .orange {
@@ -81,7 +68,7 @@ button {
   color: rgb(241, 172, 186);
 }
 
-button:active {
+td:active {
   background-color: rgb(255, 231, 236);
   border-radius: 60px;
 }
@@ -96,17 +83,9 @@ button:active {
     max-width: 310px;
   }
 
-  button {
-    margin: 0.3rem;
-    text-align: center;
-    padding: 1rem 2.5rem;
-  }
-
   #screen {
-    padding: 1.5rem;
-    border-radius: 10px;
-    margin: 0 auto;
-    height: 2vh;
+    padding: 2rem;
+    height: 8vh;
     text-align: right;
   }
 }

@@ -60,6 +60,15 @@ function equalTo(){
 }
 
 
+function newFunction() {
+  if (regexPattern.test(b)) {
+    console.log(regexPattern.test(b));
+    b = b.replace('*0.01', '');
+    console.log('b', b);
+
+  }
+}
+
 function clearScr(){
   document.getElementById('screen').innerHTML='';
 

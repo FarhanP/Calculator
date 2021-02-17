@@ -16,40 +16,38 @@
     <h1 class="title">Cute Calculator</h1>
     <div class="container">
       <header id="screen"></header>
-      <table class="main-table">
-        <tbody>
-          <tr class="orange">
-            <td onclick="clearScr()">AC</td>
-            <td onclick="sendNum('*0.01')">%</td>
-            <td onclick="sendNum('/')">/</td>
-          </tr>
-          <tr class="orange">
-            <td onclick="sendNum('+')">+</td>
-            <td onclick="sendNum('-')">-</td>
-            <td onclick="sendNum('*')">x</td>
-          </tr>
-          <tr>
-            <td onclick="sendNum('7')">7</td>
-            <td onclick="sendNum('8')">8</td>
-            <td onclick="sendNum('9')">9</td>
-          </tr>
-          <tr>
-            <td onclick="sendNum('4')">4</td>
-            <td onclick="sendNum('5')">5</td>
-            <td onclick="sendNum('6')">6</td>
-          </tr>
-          <tr>
-            <td onclick="sendNum('1')">1</td>
-            <td onclick="sendNum('2')">2</td>
-            <td onclick="sendNum('3')">3</td>
-          </tr>
-          <tr>
-            <td onclick="sendNum('.')">.</td>
-            <td onclick="sendNum('0')">0</td>
-            <td onclick="equalTo()">=</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="main-keys">
+        <div>
+          <button class="orange" onclick="clearScr()">AC</button>
+          <button class="orange" onclick="sendNum('*0.01')">%</button>
+          <button class="orange" onclick="sendNum('/')">/</button>
+        </div>
+        <div>
+          <button class="orange" onclick="sendNum('+')">+</button>
+          <button class="orange" onclick="sendNum('-')">-</button>
+          <button class="orange" onclick="sendNum('*')">x</button>
+        </div>
+        <div>
+          <button onclick="sendNum('7')">7</button>
+          <button onclick="sendNum('8')">8</button>
+          <button onclick="sendNum('9')">9</button>
+        </div>
+        <div>
+          <button onclick="sendNum('4')">4</button>
+          <button onclick="sendNum('5')">5</button>
+          <button onclick="sendNum('6')">6</button>
+        </div>
+        <div>
+          <button onclick="sendNum('1')">1</button>
+          <button onclick="sendNum('2')">2</button>
+          <button onclick="sendNum('3')">3</button>
+        </div>
+        <div>
+          <button onclick="sendNum('.')">.</button>
+          <button onclick="sendNum('0')">0</button>
+          <button onclick="equalTo()">=</button>
+        </div>
+      </div>
     </div>
     <p class="credit">Made with <span class="heart">&#9829;</span> by Farhan</p>
   </body>
