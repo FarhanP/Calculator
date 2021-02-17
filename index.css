@@ -85,6 +85,11 @@ button:active {
   border-radius: 60px;
 }
 
+button:focus {
+  background-color: rgb(255, 231, 236);
+  border-radius: 60px;
+}
+
 @media (min-width: 40rem) {
   .container {
     width: 44vw;
