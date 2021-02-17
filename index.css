@@ -64,6 +64,7 @@ button {
   outline: none;
   border: none;
   text-align: center;
+  cursor: pointer;
 }
 
 .orange {
@@ -81,11 +82,6 @@ button {
 }
 
 button:active {
-  background-color: rgb(255, 231, 236);
-  border-radius: 60px;
-}
-
-button:focus {
   background-color: rgb(255, 231, 236);
   border-radius: 60px;
 }
