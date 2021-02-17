@@ -17,6 +17,7 @@ function sendNum(digit){
     document.getElementById('screen').innerHTML=a;
   }
 
+
   for(i=0; i<num.length;i++){
     a+=num[i];
   }
@@ -50,24 +51,19 @@ function equalTo(){
   }
 
   ans= eval(b);
-  document.getElementById('screen').innerHTML=ans;
+  ans!==undefined?document.getElementById('screen').innerHTML=ans:'';
 
   while(num.length>0){
     num.pop();
   }
 
-  num.push(ans.toString());
-}
 
-
-function newFunction() {
-  if (regexPattern.test(b)) {
-    console.log(regexPattern.test(b));
-    b = b.replace('*0.01', '');
-    console.log('b', b);
-
+  if(ans!==undefined){
+    num.push(ans.toString());
   }
+  
 }
+
 
 function clearScr(){
   document.getElementById('screen').innerHTML='';
