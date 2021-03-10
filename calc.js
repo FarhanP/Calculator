@@ -6,13 +6,23 @@ var regexPattern;
 
 function sendNum(digit){
 
+
+  if(num.length>20){
+    var screen= document.getElementById('screen');
+
+   console.log(screen);
+    screen.classList.add('screenfix');
+    
+    
+  }
+
   num.push(digit);
 
   
   console.log('Num array', num);
 
 
-  if(num.length!=1){
+  if(num.length!=1 ){
     a='';
     document.getElementById('screen').innerHTML=a;
   }
@@ -23,6 +33,8 @@ function sendNum(digit){
   }
 
   console.log('A', a);
+
+
 
 
   document.getElementById('screen').innerHTML=a;
@@ -40,17 +52,22 @@ function equalTo(){
     b+=num[i];
   }
 
- regexPattern=/([0-9]*\.?[0-9]+[\/\+\-])+([0-9]+)/;
+  
+//  regexPattern=/([0-9]*\.?[0-9]+[\/\+\-])+([0-9]+)/;
+regexPattern=/([0-9]*\.?[0-9]+[\/\+\-\*])+([0-0.01]+)/;
 
 
   if(regexPattern.test(b)){
+
     console.log(regexPattern.test(b))
-    b=b.replace('*0.01', '');
+    // b=b.replace('*0.01', '');
     console.log('b',b);
-    
   }
 
+
+
   ans= eval(b);
+  console.log('The Equation', b)
   ans!==undefined?document.getElementById('screen').innerHTML=ans:'';
 
   while(num.length>0){
@@ -61,17 +78,20 @@ function equalTo(){
   if(ans!==undefined){
     num.push(ans.toString());
   }
+
   
 }
 
 
 function clearScr(){
-  document.getElementById('screen').innerHTML='';
+  var screen=document.getElementById('screen');
 
+  screen.classList.toggle('screenfix', false);
+  screen.innerHTML='';
+  
   while(num.length>0){
     num.pop();
   }
-
   a='';
   b='';
 }

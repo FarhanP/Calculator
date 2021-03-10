@@ -31,12 +31,16 @@ body {
   padding: 1.5rem;
   border-radius: 10px;
   margin: 0 auto;
-  height: 2vh;
+  min-height: 2vh;
   text-align: right;
   font-size: x-large;
   font-weight: bolder;
   color: rgb(49, 124, 124);
   overflow: hidden;
+}
+
+.screenfix {
+  font-size: small !important;
 }
 
 .main-keys {
